@@ -54,10 +54,9 @@
 
 	<script id="hackSpotsTable" type="text/html">
 		<table>
-		<tr><th class="tHeader">Name</th><th class="tHeader">Organisation</th><th class="tHeader">Email</th><th class="tHeader">State</th><th class="tHeader">Country</th><th class="">Elsewhere</th></tr>
+		<tr><th class="tHeader">Name</th><th class="tHeader">Organisation</th><th class="tHeader">Floor</th><th class="tHeader">Contact me for...</th><th class="tHeader">Email</th><th class="">Elsewhere</th></tr>
 		  {{#rows}}
-		  	<tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{organisation}}</td><td>{{email}}</td><td>{{state}}</td><td>{{country}}</td><td><a class="button" href="https://twitter.com/{{twitterhandle}}" target="_blank">Twitter</a> <a class="button" href="{{website}}" target="_blank">Web</a> <a class="button" href="{{website}}" target="_blank"></a></td></tr>
-		  	<tr class="hideRow"><td>wifi: {{wifipassword}}</td></tr>
+		  	<tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{organisation}} ({{job}})</td><td>{{floor}}</td><td>{{contactmefor}}</td><td><a href="mailto:{{email}}">{{email}}</a></td><td><a class="button" href="https://twitter.com/{{twitterhandle}}" target="_blank">Twitter</a> <a class="button" href="{{website}}" target="_blank">Web/Blog</a> <a class="button" href="{{facebook}}" target="_blank">Facebook</a> <a class="button" href="http://instagram.com/{{instagram}}" target="_blank">Instagram</a></td></tr>
 		  {{/rows}}
 	  </table>
 	</script>
